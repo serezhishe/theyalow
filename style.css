@@ -28,7 +28,12 @@ header {
    font-family: Asap-Regular;
    src: url(./assets/fonts/Asap-Regular.ttf);
   }
- 
+
+@font-face {
+  font-family: Segoe-UI-light;
+  src: url(./assets/fonts/Segoe-UI-light.ttf);
+ }
+
  .logo {
    position: absolute;
    margin: 30px 0 0 140px;
@@ -237,4 +242,41 @@ header h2.cool {
 
 header h2.minimal {
   color: white;
+}
+
+.icons {    
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 170px;
+  padding-bottom: 40px;
+  padding-left: 85px;
+  padding-right: 85px;
+  background: url("./assets/icons-background.png")
+}
+
+.icons .vertical-line {
+  width: 1px;
+  top: 40px;
+  position: relative;
+  height: 210px;
+  background-color: #d2d2d2;
+}
+
+.icons h4{
+  font-family: Segoe-UI-light, MyriadPro-Regular;
+  font-size: 27px;
+  color: rgba(0, 0, 0, 255);
+  text-align: center;
+  margin: 0;
+}
+
+.icons .price,
+.icons .customize,
+.icons .design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:181px;
+  flex-wrap: wrap;
 }
