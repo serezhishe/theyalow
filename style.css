@@ -24,6 +24,11 @@ header {
   src: url(./assets/fonts/SegoeWP.ttf);
  }
 
+ @font-face {
+   font-family: Asap-Regular;
+   src: url(./assets/fonts/Asap-Regular.ttf);
+  }
+ 
  .logo {
    position: absolute;
    margin: 30px 0 0 140px;
@@ -36,6 +41,7 @@ h1 {
   font-size: 40px;
   color: rgba(255, 255, 255, 255);
   display: inline-block;
+  font-weight: 400;
 }
 
 header .logo img{
@@ -105,11 +111,130 @@ nav .menu a {
   align-items: center;
 }
 
-nav h2 {
+nav h3 {
   margin-left: 5px;
   font-family: SegoeWP, MyriadPro-Regular;
   font-size: 17px;
   color: rgba(155, 125, 8, 255);
   text-align: center;
   display: inline-block;
+}
+
+.player {
+  width: 550px;
+  height: 330px;
+  position: absolute;
+  margin: 80px 0 0 150px;
+}
+
+.player .mask {
+  position: absolute;
+  background-color: #776832;
+  width: 550px;
+  height: 330px;
+  opacity: 0.3;
+  z-index: 4;
+}
+
+.resume {
+  width: 67px;
+  height: 67px;
+  opacity: 0.75;
+  border-radius: 50%;
+  z-index: 3;
+  position: absolute;
+  background-color: #f8d54b;
+  left: 242px;
+  top: 132px;
+}
+
+.resume-triangle {
+  left: 269px;
+  top: 149px;
+  position: absolute;
+  z-index: 6;
+	width: 0;
+  height: 0;
+	border-top: 17px solid transparent;
+	border-left: 19px solid #f5f4f2;
+	border-bottom: 17px solid transparent;
+}
+
+.control {
+  width: 27px;
+  height: 27px;
+  opacity: 0.6;
+  z-index: 3;
+  position: absolute;
+  background-color: #997d28;
+  left: 30px;
+  top: 280px;
+}
+
+.control-triangle {
+  left: 40px;
+  top: 285px;
+  position: absolute;
+  z-index: 6;
+	width: 0;
+  height: 0;
+  opacity: 0.5;
+	border-top: 8px solid transparent;
+	border-left: 10px solid #f5f4f2;
+	border-bottom: 8px solid transparent;
+}
+
+.viewbar {
+  left: 80px;
+  top: 288px;
+  position: absolute;
+  width: 180px;
+  height: 12px;
+  border-radius: 5px 0 0 5px;
+  background: #fcca04;
+  z-index: 3;
+}
+
+.loadingbar {
+  left: 80px;
+  top: 288px;
+  position: absolute;
+  width: 400px;
+  height: 12px;
+  border-radius: 5px;
+  z-index: 2;
+  background: #fcefba;
+}
+
+img[alt="volume"] {
+  left: 515px;
+  top: 288px;
+  z-index: 4;
+  position: absolute;
+}
+
+.tagline {
+  position: relative;
+  left: 750px;
+  top: 150px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+header h2 {
+  font-family: Asap-Regular, MyriadPro-Regular;
+  font-size: 63px;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+header h2.cool {
+  color: rgba(245, 197, 6, 255);
+}
+
+header h2.minimal {
+  color: white;
 }
