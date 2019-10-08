@@ -1,0 +1,40 @@
+body {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  height: 566px;
+  background: url("assets/headerback.png");
+}
+
+@font-face {
+  font-family: LucidaSans-Italic;
+  src: url(./assets/fonts/LSANSI.TTF);
+ }
+
+ @font-face {
+  font-family: MyriadPro-Regular;
+  src: url(./assets/fonts/MyriadPro-Regular.ttf);
+ }
+
+ .logo {
+   position: absolute;
+   margin: 30px 0 0 140px;
+   display: flex;
+   align-items: center;     
+ }
+
+h1 {
+  font-family: LucidaSans-Italic, MyriadPro-Regular;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 255);
+  display: inline-block;
+}
+
+header img {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+}
