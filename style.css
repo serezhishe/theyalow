@@ -19,6 +19,11 @@ header {
   src: url(./assets/fonts/MyriadPro-Regular.ttf);
  }
 
+ @font-face {
+  font-family: SegoeWP;
+  src: url(./assets/fonts/SegoeWP.ttf);
+ }
+
  .logo {
    position: absolute;
    margin: 30px 0 0 140px;
@@ -33,17 +38,17 @@ h1 {
   display: inline-block;
 }
 
-header img{
+header .logo img{
   display: inline-block;
   width: 80px;
   height: 80px;
 }
 
-header img:first-child {
+header .logo img:first-child {
   opacity: 0.5;
 }
 
-header img:nth-child(2) {
+header .logo img:nth-child(2) {
   position: absolute;
   transform: rotate(45deg);
 }
@@ -60,6 +65,7 @@ nav .rectback {
   width: 450px;
   height: 40px;
   background: #7f7422;
+  opacity: 0.4;
 }
 
 nav .rectmid {
@@ -69,9 +75,13 @@ nav .rectmid {
   width: 450px;
   height: 40px;
   background: #a0871a;
+  opacity: 0.7;
 }
 
 nav .menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
   left: 10px;
   top: -70px;
@@ -79,7 +89,27 @@ nav .menu {
   height: 40px;
   background: #f5c506;
 }
-nav .menu div {
+
+nav .menu .vertical-line {
+  background-color: #dcb105;
+  width: 1px;
+  height: 100%;
+  z-index: 5;
+  content: "";
   display: inline-block;
 }
 
+nav .menu a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+nav h2 {
+  margin-left: 5px;
+  font-family: SegoeWP, MyriadPro-Regular;
+  font-size: 17px;
+  color: rgba(155, 125, 8, 255);
+  text-align: center;
+  display: inline-block;
+}
