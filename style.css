@@ -1,7 +1,14 @@
-
+html {
+  font-size: 0px;
+}
 body {
   width: 1300px;
   margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  margin: 0;
 }
 
 header {
@@ -20,8 +27,8 @@ header {
  }
 
  @font-face {
-  font-family: SegoeWP;
-  src: url(./assets/fonts/SegoeWP.ttf);
+  font-family: SegoeWP-Light;
+  src: url(./assets/fonts/SegoeWP-Light.ttf);
  }
 
  @font-face {
@@ -33,6 +40,11 @@ header {
   font-family: Segoe-UI-light;
   src: url(./assets/fonts/Segoe-UI-light.ttf);
  }
+
+ @font-face {
+   font-family: PTSans-Regular;
+   src: url(./assets/fonts/PTSans-Regular.ttf);
+  }
 
  .logo {
    position: absolute;
@@ -118,7 +130,7 @@ nav .menu a {
 
 nav h3 {
   margin-left: 5px;
-  font-family: SegoeWP, MyriadPro-Regular;
+  font-family: SegoeWP-Light, MyriadPro-Regular;
   font-size: 17px;
   color: rgba(155, 125, 8, 255);
   text-align: center;
@@ -233,7 +245,6 @@ header h2 {
   font-size: 63px;
   text-align: center;
   font-weight: 400;
-  margin: 0;
 }
 
 header h2.cool {
@@ -268,7 +279,6 @@ header h2.minimal {
   font-size: 27px;
   color: rgba(0, 0, 0, 255);
   text-align: center;
-  margin: 0;
 }
 
 .icons .price,
@@ -279,4 +289,124 @@ header h2.minimal {
   justify-content: center;
   width:181px;
   flex-wrap: wrap;
+}
+
+.slider {
+  padding: 40px 140px 20px;
+  height: 450px;
+  background: url("assets/slider-background.png");
+}
+
+.slider h3 {
+  font-weight: 400;
+  font-family: PTSans-Regular, MyriadPro-Regular;
+  font-size: 37px;
+  color: rgba(255, 255, 255, 255);
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.slider p {
+  font-family: SegoeWP-Light, MyriadPro-Regular;
+  font-size: 28px;
+  width: 275px;
+  height: 180px;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 255);
+  text-align: left;
+  background: #ec9e03;
+  margin: 0;
+  padding: 24px 35px 28px 30px;
+  position: relative;
+  top: -30px;
+  display: inline-block;
+}
+
+video {
+  z-index: 6;
+}
+
+.slider-bar {
+  width: 900px;
+  height: 15px;
+  background: #fae798;
+  border-radius: 10px;
+  position: relative;
+  top: -30px;
+}
+
+.current-page {
+  width: 200px;
+  height: 15px;
+  background: #ec9e03;
+  border-radius: 10px;
+  position: relative;
+  left: 250px;
+}
+
+.slider video {
+  position: relative;
+  display: inline-block;
+}
+
+.twitter {
+  position: relative;
+  display: inline-block;
+  background: #ec9e03;
+  width: 330px;
+  left: 34px;
+  height: 232px;
+  top: -73px;
+  text-align: center
+}
+
+.twitter span{
+  font-family: SegoeWP-Light, MyriadPro-Regular;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 255);
+  text-align: left;
+  position: absolute;
+  left: 285px;
+  top: 20px;
+}
+
+.twitter img {
+  position: relative;
+  top: 60px;
+}
+
+.date {
+  display: inline-block;
+  position: relative;
+  top: -73px;
+  width: 115px;
+  height: 85px;
+  background: #ddb101;
+}
+
+.slider h4 {
+  font-family: SegoeUI-Bold, MyriadPro-Regular;
+  font-size: 51px;
+  color: rgba(255, 255, 255, 255);
+  text-align: center;
+}
+
+.slider h5 {
+  font-family: SegoeUI, MyriadPro-Regular;
+  font-size: 21px;
+  color: rgba(178, 101, 41, 255);
+  text-align: center;
+}
+
+.slider .link{
+  position: absolute;
+  top: 200px;
+  left: 310px;
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+  opacity: 0.5;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Times;
 }
