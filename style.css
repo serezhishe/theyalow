@@ -170,12 +170,13 @@ nav h3 {
   height: 330px;
   position: absolute;
   margin: 80px 0 0 150px;
+  overflow: hidden;
 }
 
 .player .mask {
   position: absolute;
   background-color: #776832;
-  width: 550px;
+  width: 100%;
   height: 330px;
   opacity: 0.3;
   z-index: 4;
@@ -193,6 +194,9 @@ nav h3 {
   top: 132px;
 }
 
+header video {
+  transform: scale(1.17);
+}
 .resume-triangle {
   left: 28px;
   top: 18px;
@@ -440,6 +444,11 @@ video {
   top: 60px;
 }
 
+.tweet,
+.tweetbar {
+  display: none;
+}
+
 .date {
   display: inline-block;
   position: relative;
@@ -474,6 +483,9 @@ video {
   font-size: 20px;
   font-weight: 600;
   font-family: Times;
+}
+.tweetbox {
+  display: none;
 }
 
 .bottom {
@@ -624,4 +636,186 @@ a.link:active {
 
 a h3:active {
   box-shadow: inset 0 0px 2px 0px #4c4c4c;
+}
+
+@media (max-width:640px) {
+  body { 
+    width: 640px;
+  }
+  header {
+    height: 395px;
+    background: none;
+  }
+  header .logo {
+    position: fixed !important;
+    margin: 0 !important;
+    width: 190px;
+    height: 65px;
+    z-index: 7;
+    background: linear-gradient(0deg, rgba(70,70,70,1) 0%, rgba(98,98,98,1) 100%);
+  }
+  header .logo img {
+    width: 37px;
+    height: 37px;
+    margin-left: 12px;
+  }
+  h1 {
+    font-size: 20px;
+    text-shadow: 2px 2px #333333;
+  }
+  .rectback,
+  .rectmid {
+    display: none;
+  }
+  header nav {
+    position: fixed;
+    left: 190px;
+    top: 0;
+    height: 65px;
+    z-index: 7;
+  }
+  header .menu {
+    height: 65px;
+    left: 0px;
+    top: 0px;
+  }
+  header .menu h3 {
+    font-size: 20px;
+  }
+  header video {
+    width: 640px;
+    height: 330px;
+    transform: none;
+  }
+  header .player {
+    margin: 65px 0 0 0;
+    width: 640px;
+  }
+  main .vertical-line {
+    display: none;
+  }
+  .icons {
+    height: 145px;
+    padding: 0 0 30px 0;
+    align-items: flex-end;
+    box-shadow: none;
+  }
+  .icons img {
+    margin: 0 40px;
+    transform: scale(0.8);
+  }
+  .icons h4 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .slider {
+    background: none;
+    padding: 0;
+    height: 485px;
+  }
+  .slider p {
+    position: relative;
+    top: 0;
+    left: 0;
+    line-height: 1.2;
+    width: 236px;
+    height: 190px;
+    padding: 20px 38px 22px 26px;
+    margin: 10px;
+  }
+  .slider video {
+    top: 19px;
+  }
+  .slider .link {
+    top: 200px;
+    left: 275px;
+  }
+  .twitter {
+    background: #f5c507;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+  }
+  .twitter img {
+    width: 160px;
+    left: 85px;
+  }
+  .slider .date,
+  .slider .slider-bar,
+  .slider .slider-item,
+  .twitter span,
+  .twitter .link,
+  .slider h3 {
+    display: none;
+  }
+  span.tweet {
+    display: inline-block;
+    width: 217px;
+    height: 28px;
+    left: 325px;
+    padding: 10px 40px 5px 27px;
+    background: url("./assets/phrase.png") no-repeat;
+    font-family: ArialMT, MyriadPro-Regular;
+    font-size: 13px;
+    color: rgba(143, 142, 142, 255);
+  }
+  span.tweet:nth-of-type(2) {
+    top: 25px;
+  }
+  span.tweet:nth-of-type(3) {
+    top: 82px;
+    opacity: 0.7;
+  }
+  span.tweet:nth-of-type(4) {
+    top: 139px;
+    opacity: 0.5;
+  }
+  .tweetbox {
+    display: inline-block;
+    background: white;
+    width: 270px;
+    height: 30px;
+    position: absolute;
+    left: 335px;
+    top: 190px;
+    border-radius: 10px;
+  }
+  .send-button {
+    background: #e1a01e;
+    width: 70px;
+    height: 20px;
+    left: 200px;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    color: white;
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+    font-family: ArialMT, MyriadPro-Regular;
+  }
+  .bottom ul {
+    display: none;
+  }
+  .bottom img {
+    left: 57px;
+  }
+  .bottom .circle {
+    left: 27px;
+  }
+  footer {
+    height: 50px;
+  }
+  footer .logo {
+    margin: 10px 0 0 65px;
+  }
+  footer .logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  footer h2 {
+    font-size: 15px;
+    text-shadow: 2px 2px #333333;
+  }
 }
